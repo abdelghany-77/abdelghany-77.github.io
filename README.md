@@ -1,9 +1,9 @@
-# abdelghany-74.github.io
+# abdelghany-77.github.io
 # Welocome 👋
-This is my first responsive portdolio website please if you have any comment to upgrade it, tell me.
+This is my first responsive portfolio website 
 
 # Made by using :
 -HTML
 -CSS
--Bootsrtap
+-Bootstrap
 -Javascript
