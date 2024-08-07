@@ -4656,7 +4656,8 @@ textarea.form-control-lg {
 }
 
 .card-img, .card-img-top, .card-img-bottom {
-  width: 100%
+  width: 100%;
+  height: 312px;
 }
 
 .card-img, .card-img-top {
@@ -12359,11 +12360,13 @@ textarea.form-control-lg {
 }
 
 .portfolio-block.website h3, .portfolio-block.website .h3 {
-  font-weight: bold
+  font-weight: bold;
+  text-align: center;
 }
 
 .portfolio-block.website p {
-  opacity: .9
+  opacity: .9;
+  text-align: left;
 }
 
 .portfolio-laptop-mockup {
