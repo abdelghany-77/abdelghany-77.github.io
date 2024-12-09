@@ -4577,7 +4577,7 @@ textarea.form-control-lg {
 }
 
 .card-body-p {
-  height: 254px;
+  height: auto;
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
