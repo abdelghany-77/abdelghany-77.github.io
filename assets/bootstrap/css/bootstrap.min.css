@@ -13124,7 +13124,7 @@ fieldset:disabled .btn {
   display: inline-block;
   color: #fff;
   padding: 2px 8px;
-  border-radius: 2em;
+  border-radius: 1em;
 }
 
 .portfolio-block.cv .education.group .organization {
