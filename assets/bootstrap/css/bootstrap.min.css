@@ -13878,3 +13878,7 @@ fieldset:disabled .btn {
   border-bottom: none;
   cursor: help;
 }
+
+a:hover i.uil {
+  opacity: 0.7; 
+}
