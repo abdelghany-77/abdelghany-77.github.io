@@ -4923,7 +4923,7 @@ fieldset:disabled .btn {
 }
 
 .card-body-p {
-  height: auto;
+  height: 100%;
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
@@ -13924,4 +13924,99 @@ a:hover i.uil {
 
 .skills ul li:hover i {
   color: var(--bs-link-hover-color);
+}
+
+/* Equal height cards */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+}
+
+.card-body-p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.project-description {
+  flex: 1;
+}
+
+.description-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.description-text.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+/* Button styling */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.375rem 0.75rem;
+  margin: 0 0.25rem;
+}
+
+.view-repo {
+  flex: 1;
+}
+
+.view-more {
+  flex: 1;
+}
+
+.carousel {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 250px;
+  width: 100%;
+}
+
+.carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators button.active {
+  background-color: white;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  bottom: 10px;
 }
