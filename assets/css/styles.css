@@ -43,6 +43,36 @@
   --radius-full: 50%;
 }
 
+/* Performance Optimizations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize animations with will-change where needed */
+.carousel-slides,
+.project-card,
+.service-card,
+.skill-card,
+.btn {
+  will-change: transform;
+}
+
+/* Content-visibility for off-screen sections */
+.services,
+.projects,
+.experience,
+.skills,
+.contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
 /* Dark Theme */
 [data-theme="dark"] {
   --bg-primary: #0f172a;

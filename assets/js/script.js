@@ -551,24 +551,28 @@ function initContactForm() {
   });
 }
 
-/* ===== Particles Effect ===== */
+/* ===== Particles Effect (Optimized) ===== */
 function initParticles() {
   const container = document.getElementById("particles");
   if (!container) return;
 
-  const particleCount = 50;
+  // Reduce particle count for better performance
+  const particleCount = 20; // Reduced from 50
+
+  // Use document fragment for batch DOM insertion
+  const fragment = document.createDocumentFragment();
 
   for (let i = 0; i < particleCount; i++) {
     const particle = document.createElement("div");
     particle.className = "particle";
 
     // Random properties
-    const size = Math.random() * 5 + 2;
+    const size = Math.random() * 4 + 2;
     const posX = Math.random() * 100;
     const posY = Math.random() * 100;
     const delay = Math.random() * 5;
-    const duration = Math.random() * 10 + 10;
-    const opacity = Math.random() * 0.5 + 0.1;
+    const duration = Math.random() * 15 + 15; // Slower animation for less CPU
+    const opacity = Math.random() * 0.3 + 0.1;
 
     particle.style.cssText = `
       position: absolute;
@@ -580,10 +584,13 @@ function initParticles() {
       top: ${posY}%;
       opacity: ${opacity};
       animation: particleFloat ${duration}s ease-in-out ${delay}s infinite;
+      will-change: transform;
     `;
 
-    container.appendChild(particle);
+    fragment.appendChild(particle);
   }
+
+  container.appendChild(fragment);
 
   // Add particle animation keyframes
   const style = document.createElement("style");
@@ -639,18 +646,56 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 /* ===== Update Current Year ===== */
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
-/* ===== Lazy Load Images ===== */
-const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-if ("IntersectionObserver" in window) {
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src || img.src;
-        imageObserver.unobserve(img);
+/* ===== Enhanced Lazy Load Images ===== */
+function initLazyLoading() {
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+  if ("IntersectionObserver" in window) {
+    const imageObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+
+            // Load the image
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+            }
+
+            // Add loaded class for fade-in effect
+            img.classList.add("loaded");
+
+            observer.unobserve(img);
+          }
+        });
+      },
+      {
+        rootMargin: "100px 0px", // Start loading 100px before visible
+        threshold: 0.01,
+      }
+    );
+
+    lazyImages.forEach((img) => {
+      // Add placeholder styling
+      img.style.opacity = "0";
+      img.style.transition = "opacity 0.3s ease";
+
+      // When image loads, fade it in
+      img.addEventListener("load", () => {
+        img.style.opacity = "1";
+      });
+
+      imageObserver.observe(img);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    lazyImages.forEach((img) => {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
       }
     });
-  });
-
-  lazyImages.forEach((img) => imageObserver.observe(img));
+  }
 }
+
+// Initialize lazy loading
+initLazyLoading();
