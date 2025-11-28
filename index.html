@@ -1,1577 +1,1304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Mohamed Abdelghany | Backend Developer</title>
+    <meta
+      name="description"
+      content="Backend Developer specializing in PHP, Laravel, and MySQL. Building robust server-side applications and scalable APIs."
+    />
+    <meta
+      name="keywords"
+      content="Backend Developer, PHP, Laravel, MySQL, Web Development, Cairo, Egypt"
+    />
+    <meta name="author" content="Mohamed Abdelghany" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Abdelghany</title>
-  <!--==================== UNICONS ====================-->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=bc6e88d3ecb03ba4bdc8c098422fc485" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css" />
-  <link rel="stylesheet" href="/assets/css/styles.min.css?h=b5aed8dc607ca5fe464c680fa3ae4d6d" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="icon" type="image" href="assets/img/icon.png" />
-</head>
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:title"
+      content="Mohamed Abdelghany | Backend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Backend Developer specializing in PHP, Laravel, NodeJs, and MySQL."
+    />
+    <meta property="og:type" content="website" />
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top premium-navbar">
-    <div class="container">
-      <!-- Logo Area -->
-      <div class="navbar-brand-container">
-        <img src="assets/img/icon.png" alt="Logo" class="navbar-logo" />
-        <a class="navbar-brand" href="#">
-          <span class="brand-text">Abdelghany</span>
-          <!-- <span class="brand-dot"></span> -->
-        </a>
-      </div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-      <!-- Dark Mode Toggle -->
-      <!-- <div class="theme-toggle d-none d-lg-flex">
-      <input type="checkbox" class="theme-toggle-input" id="themeToggle">
-      <label class="theme-toggle-label" for="themeToggle">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-        <span class="theme-toggle-ball"></span>
-      </label>
-    </div> -->
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">
-              <span class="nav-icon"><i class="fas fa-home"></i></span>
-              <span class="nav-text">Home</span>
-            </a>
-          </li>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  </head>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#services">
-              <span class="nav-icon"><i class="fas fa-cog"></i></span>
-              <span class="nav-text">Services</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#project">
-              <span class="nav-icon"><i class="fas fa-laptop-code"></i></span>
-              <span class="nav-text">Projects</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#cv">
-              <span class="nav-icon"><i class="fas fa-file-alt"></i></span>
-              <span class="nav-text">CV</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link contact-link" href="#contact">
-              <span class="nav-icon"><i class="fas fa-paper-plane"></i></span>
-              <span class="nav-text">Contact Me</span>
-            </a>
-          </li>
-        </ul>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="loader">
+        <div class="loader-inner"></div>
       </div>
     </div>
-  </nav>
 
-  <!-- Progress Indicator -->
-  <div class="scroll-progress-container">
-    <div class="scroll-progress-bar"></div>
-  </div>
-  <main class="page landing-page" id="home">
-    <!-- Hero Section with Animated Background -->
-    <section class="hero-section">
-      <div class="hero-bg">
-        <div class="hero-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-          <div class="shape shape-4"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-text">&lt;MA/&gt;</span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
+    </nav>
 
-      <div class="container">
-        <div class="hero-content">
-          <div class="row align-items-center">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <div class="profile-card">
-                <div class="profile-card-inner">
-                  <div class="profile-image-container">
-                    <div class="profile-image" style="background-image: url('/assets/img/avatars/my-photo.png');">
-                      <div class="profile-glow"></div>
-                    </div>
-                    <div class="profile-badge">
-                      <span>Back-End</span>
-                      <span>Developer</span>
-                    </div>
-                  </div>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+      <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
 
-                  <div class="profile-social">
-                    <a href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7" class="social-link"
-                      aria-label="LinkedIn" target="_blank">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/abdelghany-77" class="social-link" aria-label="GitHub" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:moabdelghany77@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Mohamed,"
-                      class="social-link" aria-label="Email">
-                      <i class="fas fa-envelope"></i>
-                    </a>
-                  </div>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-bg">
+          <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+          <div class="hero-particles" id="particles"></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <span class="hero-greeting">Hello, I'm</span>
+              <h1 class="hero-name">
+                Mohamed <span class="highlight">Abdelghany</span>
+              </h1>
+              <div class="hero-title">
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor">|</span>
+              </div>
+              <p class="hero-description">
+                I graduated from the Faculty of Computer Science and am
+                extremely motivated to develop my skills in back-end
+                engineering. As a strong team player, I can quickly learn and
+                implement new technologies while consistently growing
+                professionally.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                  <span>Contact Me</span>
+                  <i class="fas fa-paper-plane"></i>
+                </a>
+                <a
+                  href="assets/pdf/Mohamed_Abdelghany_CV.pdf"
+                  class="btn btn-outline"
+                  download
+                >
+                  <span>Download CV</span>
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-count="1">0</span>
+                  <span class="stat-plus">+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="6">0</span>
+                  <span class="stat-plus">+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="4">0</span>
+                  <span class="stat-plus">+</span>
+                  <span class="stat-label">Certifications</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-7">
-              <div class="hero-text-content">
-                <div class="hero-greeting">Hello, I'm</div>
-                <h1 class="hero-name">Mohamed <span>Abdelghany</span></h1>
-                <div class="hero-title">
-                  <span class="typed-text"></span>
-                  <span class="cursor">&nbsp;</span>
+            <div class="hero-image">
+              <div class="image-wrapper">
+                <div class="image-glow"></div>
+                <img
+                  src="assets/img/avatars/my-photo.png"
+                  alt="Mohamed Abdelghany"
+                  class="profile-img"
+                />
+                <div class="image-badge">
+                  <span>Backend</span>
+                  <span>Developer</span>
                 </div>
-
-                <div class="hero-description">
-                  <p>I graduated from the Faculty of Computer Science and am extremely motivated to develop my skills in
-                    back-end engineering. As a strong team player, I can quickly learn and implement new technologies
-                    while consistently growing professionally.</p>
-                </div>
-
-                <div class="hero-buttons">
-                  <a class="btn btn-primary btn-contact" href="#contact">
-                    <span>Contact Me</span>
-                    <i class="fas fa-paper-plane"></i>
-                  </a>
-                  <a class="btn btn-outline-primary btn-download" href="assets/Pdf/Mohamed_Abdelghany_CV.pdf" download>
-                    <span>Download CV</span>
-                    <i class="fas fa-download"></i>
-                  </a>
-                </div>
-
-                <div class="hero-stats">
-                  <div class="stat-item">
-                    <span class="stat-number">1+</span>
-                    <span class="stat-label">Years of Experience</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Projects Completed</span>
-                  </div>
-                  <!-- <div class="stat-item">
-                  <span class="stat-number">5+</span>
-                  <span class="stat-label">Happy Clients</span>
-                </div> -->
-                </div>
+              </div>
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/abdelghany-77"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="scroll-indicator">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div class="arrow">
-          <span></span>
-        </div>
-      </div>
-    </section>
+        <a href="#services" class="scroll-down">
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </section>
 
-    <!-- Services Section -->
-    <section class="services-section" id="services">
-      <div class="container">
-        <!-- Section Heading -->
-        <div class="heading">
-          <h2 class="text-center"><strong>SERVICES</strong></h2>
-          <div class="heading-underline"></div>
-          <p class="section-subtitle text-center">What I can do for you</p>
-        </div>
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">What I Do</span>
+            <h2 class="section-title">Services</h2>
+            <p class="section-description">
+              Specialized in building robust backend solutions and web
+              applications
+            </p>
+          </div>
 
-        <!-- Services Cards -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-card">
+          <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
               <div class="service-icon">
                 <i class="fas fa-server"></i>
               </div>
-              <h3>Back-End Development</h3>
-              <p>Building robust server-side applications with PHP, Laravel, and MySQL. I specialize in creating
-                scalable APIs, database optimization, and secure authentication systems.</p>
-              <ul class="service-list">
-                <li>API Development</li>
-                <li>Database Design</li>
-                <li>Server Configuration</li>
+              <h3>Backend Development</h3>
+              <p>
+                Building robust server-side applications with PHP, Laravel, and
+                MySQL. I specialize in creating scalable APIs, database
+                optimization, and secure authentication systems.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> API Development</li>
+                <li><i class="fas fa-check"></i> Database Design</li>
+                <li><i class="fas fa-check"></i> Server Configuration</li>
               </ul>
-              <div class="service-hover-content">
-                <div class="service-hover-icon"><i class="fas fa-code"></i></div>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
               <div class="service-icon">
-                <i class="fas fa-desktop"></i>
+                <i class="fas fa-laptop-code"></i>
               </div>
               <h3>Web Applications</h3>
-              <p>Creating custom web applications that solve business problems efficiently. From e-commerce solutions to
-                content management systems, I build maintainable and feature-rich platforms.</p>
-              <ul class="service-list">
-                <li>Custom Web Apps</li>
-                <li>E-commerce Systems</li>
-                <li>CMS Development</li>
+              <p>
+                Creating custom web applications that solve business problems
+                efficiently. From e-commerce solutions to content management
+                systems.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Custom Web Apps</li>
+                <li><i class="fas fa-check"></i> E-commerce Systems</li>
+                <li><i class="fas fa-check"></i> CMS Development</li>
               </ul>
-              <div class="service-hover-content">
-                <div class="service-hover-icon"><i class="fas fa-laptop-code"></i></div>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
               <div class="service-icon">
                 <i class="fas fa-shield-alt"></i>
               </div>
               <h3>Security Implementation</h3>
-              <p>Implementing best practices for web application security, from authentication systems to data
-                validation and protection against common vulnerabilities.</p>
-              <ul class="service-list">
-                <li>Secure Authentication</li>
-                <li>Data Protection</li>
-                <li>Security Auditing</li>
+              <p>
+                Implementing best practices for web application security, from
+                authentication systems to data validation and protection.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Secure Authentication</li>
+                <li><i class="fas fa-check"></i> Data Protection</li>
+                <li><i class="fas fa-check"></i> Security Auditing</li>
               </ul>
-              <div class="service-hover-content">
-                <div class="service-hover-icon"><i class="fas fa-lock"></i></div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <!-- <section class="portfolio-block website gradient">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-12 col-lg-5 offset-lg-1 text">
-          <h3>Website Project</h3>
-          <p>
-            We aim to develop a dynamic and visually appealing website that
-            showcases modern design principles and user-friendly navigation.
-            The website features a clean design, intuitive interface, and
-            responsive design, ensuring a seamless experience across all
-            devices. We focus on creating an engaging platform that
-            effectively communicates the client’s brand and message.
-          </p>
-        </div>
-        <div class="col-md-12 col-lg-5">
-          <div class="portfolio-laptop-mockup">
-            <div class="screen">
-              <div class="screen-content" style="background-image: url('/assets/img/icon2.png')"></div>
-            </div>
-            <div class="keyboard"></div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">My Work</span>
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="section-description">
+              A showcase of my latest development work
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Projects -->
-  <main class="page projects-page" id="project">
-    <section class="portfolio-block projects-cards">
-      <div class="container">
-        <!-- Start: portfolio heading -->
-        <div class="heading">
-          <h2 class="text-center">Recent Work</h2>
-          <div class="heading-underline"></div>
-        </div>
-        <!-- End: portfolio heading -->
-        <div class="row">
-          <!-- First Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carousele" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">14</span>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/e1.png" alt="Admin Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Admin Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e2.png" alt="Product Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Product Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e14.png" alt="User Interface" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>User Interface</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e3.png" alt="Product Catalog" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Product Catalog</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e4.png" alt="Order Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Order Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e5.png" alt="Shopping Cart" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Shopping Cart</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e13.png" alt="Checkout Process" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Checkout Process</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e7.png" alt="Analytics Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Analytics Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e8.png" alt="User Profile" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>User Profile</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e9.png" alt="Payment Options" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Payment Options</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e10.png" alt="Order History" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Order History</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e11copy.png" alt="Product Details" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Product Details</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e11c.png" alt="Category Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Category Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/e12.png" alt="Settings Panel" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Settings Panel</h6>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousele" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousele" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="laravel">Laravel</button>
+            <button class="filter-btn" data-filter="nodejs">Node.js</button>
+            <button class="filter-btn" data-filter="fullstack">
+              Full Stack
+            </button>
+          </div>
 
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carousele">
-                  <i class="fas fa-expand"></i>
-                </button>
+          <div class="projects-grid">
+            <!-- ITI E-Book Platform -->
+            <div
+              class="project-card"
+              data-category="nodejs fullstack"
+              data-aos="fade-up"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Ebook-ITI/screencapture-ec2-35-156-56-116-eu-central-1-compute-amazonaws-2025-11-27-14_04_15.png"
+                      alt="E-Book Homepage"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ebook-ITI/screencapture-ec2-35-156-56-116-eu-central-1-compute-amazonaws-shop-2025-11-27-14_05_14.png"
+                      alt="E-Book Shop"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ebook-ITI/screencapture-ec2-35-156-56-116-eu-central-1-compute-amazonaws-shop-2025-11-27-14_05_45.png"
+                      alt="E-Book Browse"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ebook-ITI/screencapture-ec2-35-156-56-116-eu-central-1-compute-amazonaws-auth-login-2025-11-27-14_06_37.png"
+                      alt="E-Book Login"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ebook-ITI/screencapture-ec2-35-156-56-116-eu-central-1-compute-amazonaws-book-68fa5c89de7c5e21c91f0cf5-2025-11-27-14_08_55.png"
+                      alt="E-Book Details"
+                      loading="lazy"
+                    />
+                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
+                </div>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/m-devo/ITI-ECommerce-Backend"
+                    target="_blank"
+                    class="project-link"
+                    title="Backend Repo"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/m-devo/ITI-ECommerce-Frontend"
+                    target="_blank"
+                    class="project-link"
+                    title="Frontend Repo"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
               </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6> E-Commerce System </h6>
-                <p style="text-align: center;">Technologies: Laravel 12, PHP, MySQL, Bootstrap 5, JavaScript, OOP, MVC
+              <div class="project-content">
+                <h3>ITI E-Book Platform</h3>
+                <p>
+                  Full-stack e-book platform with user authentication, book
+                  browsing, shopping cart, and secure checkout. Deployed on AWS
+                  EC2.
                 </p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • Developed a full-featured e-commerce platform with product catalog, shopping cart, and secure
-                    checkout system <br>
-                    • Implemented role-based authentication with separate user and admin interfaces. <br>
-                    • responsive frontend using Bootstrap 5 with custom CSS for enhanced user experience. <br>
-                    • Created a comprehensive admin dashboard for inventory management, order processing and analytics.
-                    <br>
-                    • Implemented secure payment processing with cash on delivery option and order status tracking. <br>
-                    • Utilized Laravel's Eloquent ORM for efficient database operations and relationships. <br>
-                    • Applied input validation, CSRF protection, and security best practices throughout the application.
-                    <br>
-                    • Integrated product filtering, sorting, and search capabilities for improved user experience. <br>
-                    • Leveraged Git version control for systematic feature implementation and deployment. <br>
-                  </p>
-                </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/E-Commerce-System" target="_blank">
-                    View <em class="uil uil-eye button_icon"></em>
-                  </a>
-                  <button class="btn btn-outline-secondary view-more">Read More</button>
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>Angular</span>
+                  <span>AWS</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Third Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carouselResto" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">7</span>
+            <!-- E-Commerce System -->
+            <div
+              class="project-card"
+              data-category="laravel fullstack"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Ecommerce/e1.png"
+                      alt="E-Commerce Dashboard"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e2.png"
+                      alt="E-Commerce Products"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e3.png"
+                      alt="E-Commerce Catalog"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e4.png"
+                      alt="E-Commerce Orders"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e5.png"
+                      alt="E-Commerce Cart"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e7.png"
+                      alt="E-Commerce Analytics"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e8.png"
+                      alt="E-Commerce Profile"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e9.png"
+                      alt="E-Commerce Payment"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Ecommerce/e10.png"
+                      alt="E-Commerce History"
+                      loading="lazy"
+                    />
+                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/fin1.png" alt="Financial Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Financial Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin 2.png" alt="Transaction Management"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Transaction Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin3.png" alt="Budget Planning" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Budget Planning</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin4.png" alt="Savings Goals" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Savings Goals</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin5.png" alt="Financial Reports" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Financial Reports</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin6.png" alt="Category Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Category Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin7.png" alt="Financial Analytics" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Financial Analytics</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin8.png" alt="Mobile Responsive" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin9.png" alt="Mobile Responsive" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/fin10.png" alt="Mobile Responsive" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselResto"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselResto"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carouselResto">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6>Expense Tracker</h6>
-                <p style="text-align: center;">Technologies: Laravel, PHP, MySQL, Bootstrap, MVC, Chart.js</p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • Comprehensive financial management system with real-time expense tracking, budget planning, and
-                    savings goals.<br>
-                    • Interactive dashboard with dynamic charts, financial analytics, and personalized insights for
-                    better money management.<br>
-                    • Advanced features include category management, recurring transactions, financial reports, and
-                    multi-currency support.<br>
-                    • Modern glass-morphism UI with responsive design, ensuring seamless experience across all
-                    devices.<br>
-                    • Secure authentication system with role-based access control and data encryption for financial
-                    privacy.
-                    <br>
-                  </p>
-                </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/Expense-Tracker" target="_blank">
-                    View <em class="uil uil-eye button_icon"></em>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/abdelghany-77/E-Commerce-System"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
-                  <button class="btn btn-outline-secondary view-more">Read More</button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce System</h3>
+                <p>
+                  Full-featured e-commerce platform with product catalog,
+                  shopping cart, and secure checkout system.
+                </p>
+                <div class="project-tech">
+                  <span>Laravel 12</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap 5</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Second Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carouselcli" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">12</span>
+            <!-- Expense Tracker -->
+            <div
+              class="project-card"
+              data-category="laravel fullstack"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin1.png"
+                      alt="Expense Dashboard"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin 2.png"
+                      alt="Expense Transactions"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin3.png"
+                      alt="Expense Budget"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin4.png"
+                      alt="Expense Goals"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin5.png"
+                      alt="Expense Reports"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin6.png"
+                      alt="Expense Categories"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Expense Tracker/fin7.png"
+                      alt="Expense Analytics"
+                      loading="lazy"
+                    />
+                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/cli1.png" alt="Login Screen" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Login Screen</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli2.png" alt="Patient Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Patient Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli3.png" alt="Patient Records" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Patient Records</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli4.png" alt="Appointment Calendar" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Appointment Calendar</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli5.png" alt="Medical History" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Medical History</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli6.png" alt="Prescription Management"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Prescription Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli7.png" alt="Doctor Schedule" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Doctor Schedule</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli8.png" alt="Patient Registration" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Patient Registration</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli9.png" alt="Medical Notes" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Medical Notes</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli10.png" alt="Treatment Plans" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Treatment Plans</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli11.png" alt="Billing Interface" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Billing Interface</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/cli12.png" alt="Admin Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Admin Dashboard</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselcli" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselcli" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carouselcli">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6> Clinic Management System</h6>
-                <p style="text-align: center;">Technologies: Laravel, PHP, MySQL, Bootstrap, MVC</p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • Developed a secure backend system for managing appointments, patients, and medical records. <br>
-                    • Implemented role-based authentication, restricting access to doctors only. <br>
-                    • Designed an optimized database schema to store patient details, health conditions, medicine, and
-                    doctor notes efficiently. <br>
-                    • Integrated server-side validation and CRUD operations, ensuring data integrity and secure record
-                    management. <br>
-                  </p>
-                </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/Clinic-Management-System" target="_blank">
-                    View <em class="uil uil-eye button_icon"></em>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/abdelghany-77/Expense-Tracker"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
-                  <button class="btn btn-outline-secondary view-more">Read More</button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Expense Tracker</h3>
+                <p>
+                  Comprehensive financial management system with real-time
+                  expense tracking, budget planning, and savings goals.
+                </p>
+                <div class="project-tech">
+                  <span>Laravel</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>Chart.js</span>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Third Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carouselcontent" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">12</span>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/content1.png" alt="Login Screen" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Home Screen</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/content2.png" alt="Patient Dashboard"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/content3.png" alt="Patient Records" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Posts Records</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/content4.png" alt="Appointment Calendar"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Analyrics For Posts</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/content5.png" alt="Medical History" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Platforms Setting</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/content6.png" alt="Prescription Management"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>User Profile</h6>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselcontent"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselcontent"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carouselcontent">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6>Social Media Content Scheduler</h6>
-                <p style="text-align: center;">Technologies: Laravel 12, PHP 8.2, MySQL, Bootstrap 5, Chart.js,
-                  FullCalendar.js</p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • Engineered a comprehensive platform for scheduling and automating posts across multiple social
-                    media platforms with customizable settings. <br>
-                    • Implemented advanced scheduling system with rate limiting (10 posts daily) and platform-specific
-                    content validation. <br>
-                    • Created interactive dashboard featuring visual content calendar and comprehensive analytics
-                    displaying post performance metrics. <br>
-                    • Developed service-oriented architecture separating business logic from controllers for clean
-                    organization and easy API integration. <br>
-                    • Designed optimized database schema using pivot tables to manage complex user-platform-post
-                    associations. <br>
-                  </p>
+            <!-- Social Media Content Scheduler -->
+            <div
+              class="project-card"
+              data-category="laravel fullstack"
+              data-aos="fade-up"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Content/content1.png"
+                      alt="Scheduler Home"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Content/content2.png"
+                      alt="Scheduler Dashboard"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Content/content3.png"
+                      alt="Scheduler Posts"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Content/content4.png"
+                      alt="Scheduler Analytics"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Content/content5.png"
+                      alt="Scheduler Settings"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Content/content6.png"
+                      alt="Scheduler Profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
                 </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/content-scheduler" target="_blank">
-                    View <em class="uil uil-eye button_icon"></em>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/abdelghany-77"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
-                  <button class="btn btn-outline-secondary view-more">Read More</button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Content Scheduler</h3>
+                <p>
+                  Platform for scheduling and automating posts across multiple
+                  social media platforms with analytics dashboard.
+                </p>
+                <div class="project-tech">
+                  <span>Laravel 12</span>
+                  <span>PHP 8.2</span>
+                  <span>Chart.js</span>
+                  <span>FullCalendar</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Blog Project Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carouselBlog" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">8</span>
+            <!-- Blog Platform -->
+            <div
+              class="project-card"
+              data-category="laravel"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Blog/blog1.png"
+                      alt="Blog Homepage"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog2.png"
+                      alt="Blog Article"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog3.png"
+                      alt="Blog Admin"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog4.png"
+                      alt="Blog Management"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog5.png"
+                      alt="Blog Profile"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog6.png"
+                      alt="Blog Comments"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog7.png"
+                      alt="Blog Categories"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Blog/blog8.png"
+                      alt="Blog Mobile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/blog1.png" alt="Blog Homepage" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Blog Homepage</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog2.png" alt="Article View" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Article View</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog3.png" alt="Admin Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Admin Dashboard</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog4.png" alt="Content Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Content Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog5.png" alt="User Profile" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>User Profile</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog6.png" alt="Comment System" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Comment System</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog7.png" alt="Category Management" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Category Management</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/blog8.png" alt="Responsive Mobile View"
-                      loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Responsive Mobile View</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carouselBlog">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6>Blog Platform</h6>
-                <p style="text-align: center;">Technologies: Laravel, Blade, PHP, MySQL, Bootstrap, MVC</p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • Developed a feature-rich blog platform with dynamic content management and user authentication.
-                    <br>
-                    • Implemented a responsive design with custom Blade templates for optimal viewing across all
-                    devices. <br>
-                    • Created an intuitive admin dashboard for content management, user roles, and analytics tracking.
-                    <br>
-                    • Built a robust commenting system with moderation features and notification capabilities. <br>
-                    • Integrated SEO optimization tools and social media sharing functionality. <br>
-                    • Implemented category and tag management for efficient content organization. <br>
-                    • Utilized Laravel's Eloquent ORM for database operations and relationships. <br>
-                    • Applied security best practices including CSRF protection and input validation. <br>
-                  </p>
-                </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/Blog" target="_blank">
-                    View <em class="uil uil-eye button_icon"></em>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/abdelghany-77/Blog"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
-                  <button class="btn btn-outline-secondary view-more">Read More</button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Blog Platform</h3>
+                <p>
+                  Feature-rich blog platform with dynamic content management,
+                  commenting system, and SEO optimization.
+                </p>
+                <div class="project-tech">
+                  <span>Laravel</span>
+                  <span>Blade</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Fourth Card -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0">
-              <!-- Start: Enhanced Image Carousel -->
-              <div id="carouselStudentaffairs" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-counter">
-                  <span class="current-slide">1</span>/<span class="total-slides">3</span>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="card-img-top" src="/assets/img/tech/1.png" alt="Student Dashboard" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Student Dashboard</h6>
-                    </div>
+            <!-- Student Affairs System -->
+            <div
+              class="project-card"
+              data-category="fullstack"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slides">
+                    <img
+                      src="assets/img/Projects/Student-affair/1.png"
+                      alt="Student Dashboard"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Student-affair/2.png"
+                      alt="Student Admin"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Student-affair/3.png"
+                      alt="Student Records"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/img/Projects/Student-affair/image10.png"
+                      alt="Student Reports"
+                      loading="lazy"
+                    />
                   </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/3.png" alt="Student Records" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Student Records</h6>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="/assets/img/tech/2.png" alt="Admin Interface" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6>Admin Interface</h6>
-                    </div>
-                  </div>
+                  <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="carousel-dots"></div>
                 </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselStudentaffairs"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselStudentaffairs"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-                <!-- Fullscreen Button -->
-                <button class="carousel-fullscreen-btn" data-carousel="carouselStudentaffairs">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <!-- End: Enhanced Image Carousel -->
-
-              <div class="card-body-p">
-                <h6>Student Affairs Management System</h6>
-                <p style="text-align: center;">Technologies: PHP, MySQL</p>
-                <div class="project-description">
-                  <p class="text-muted card-text description-text">
-                    • The project was developed using PHP (backend), MySQL
-                    (database), HTML/CSS/JavaScript (frontend), and includes
-                    session-based authentication to enhance security. It
-                    demonstrates practical skills in CRUD operations, user
-                    authentication, and responsive design. <br>
-                    • Add, update, and delete student records with key details such as name, email, GPA, and department.
-                    <br>
-                    • Ensure data security with a login-based authentication system, restricting access toauthorized
-                    users only. <br>
-                    • Display data in a user-friendly, responsive table with a clean, intuitive interface for ease of
-                    use. <br>
-                  </p>
-                </div>
-                <div class="button-container">
-                  <a class="btn btn-outline-primary view-repo" role="button"
-                    href="https://github.com/abdelghany-77/student-affair-system">
-                    View <em class="uil uil-eye button_icon"></em>
+                <div class="project-overlay">
+                  <button class="expand-btn" title="View Full Image">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <a
+                    href="https://github.com/abdelghany-77/student-affair-system"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
-                  <button class="btn btn-outline-secondary view-more"> Read More</button>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Student Affairs System</h3>
+                <p>
+                  Student management system with CRUD operations,
+                  authentication, and responsive data tables.
+                </p>
+                <div class="project-tech">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>JavaScript</span>
+                  <span>CSS</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- Image Preview Modal (append at the end of body) -->
-  <div class="image-preview-modal" id="imagePreviewModal">
-    <button class="modal-close">&times;</button>
-    <div class="modal-image-container">
-      <img class="modal-image" id="previewImage" src="" alt="Project Preview">
-    </div>
-    <button class="modal-nav modal-prev">
-      <i class="fas fa-chevron-left"></i>
-    </button>
-    <button class="modal-nav modal-next">
-      <i class="fas fa-chevron-right"></i>
-    </button>
-  </div>
-  <!-- CV Section -->
-  <main class="page cv.page" id="cv">
-    <section class="portfolio-block cv">
-      <div class="container">
-        <div class="education-section">
-          <div class="heading">
-            <h2 class="text-center">Education</h2>
-            <div class="heading-underline"></div>
+      <!-- Experience Section -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">My Journey</span>
+            <h2 class="section-title">Experience & Education</h2>
           </div>
 
-          <div class="education-card">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="education-content">
-                  <span class="degree-tag">University Degree</span>
-                  <h3 class="degree-title">Bachelor's of Computers and Artificial Intelligence</h3>
-                  <h4 class="institution">
-                    <i class="fas fa-university"></i> Cairo University
-                  </h4>
-                  <!-- <div class="grade-badge">
-            <span class="grade-label">Grade:</span>
-            <span class="grade-value">Good</span>
-          </div> -->
+          <div class="timeline">
+            <!-- Work Experience -->
+            <div class="timeline-section">
+              <h3 class="timeline-heading">
+                <i class="fas fa-briefcase"></i> Work Experience
+              </h3>
 
-                  <div class="coursework">
-                    <h5>Relevant Coursework</h5>
-                    <div class="course-tags">
-                      <span class="course-tag">Web Development</span>
-                      <span class="course-tag">Database Systems</span>
-                      <span class="course-tag">Object-Oriented Programming</span>
-                      <span class="course-tag">Software Engineering</span>
-                      <span class="course-tag">Data Structure</span>
-                      <span class="course-tag">Algorithms</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="education-period">
-                  <div class="period-container">
-                    <div class="calendar-icon">
-                      <i class="far fa-calendar-alt"></i>
-                    </div>
-                    <div class="period-text">
-                      <span class="period-dates">September 2020 - May 2024</span>
-                      <span class="period-duration">4 Years</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="experience-section">
-          <div class="heading">
-            <h2 class="text-center">Work Experience</h2>
-            <div class="heading-underline" style="top: -50px;"></div>
-          </div>
-
-          <!-- Full Stack PHP Laravel Trainee - Most Recent -->
-          <div class="education-card">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="education-content">
-                  <span class="degree-tag">Training Position</span>
-                  <h3 class="degree-title">Full Stack PHP Laravel Trainee</h3>
-                  <h4 class="institution">
+              <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">June 2025 - September 2025</span>
+                  <span class="timeline-badge">Training</span>
+                  <h4>Full Stack PHP Laravel Trainee</h4>
+                  <h5>
                     <i class="fas fa-building"></i> ITI - New Capital, Egypt
-                  </h4>
-                  <div class="coursework">
-                    <h5>Key Responsibilities & Achievements</h5>
-                    <div class="experience-details" style="margin-top: 15px;">
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Developed a full-stack web application using PHP, Laravel, and Node.js, contributing to a collaborative project in a team-based environment</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Engineered responsive and dynamic user interfaces with HTML5, CSS3, Bootstrap, jQuery, and React</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Managed database operations and system performance by applying knowledge of MySQL and Database Fundamentals</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Utilized Version Control Systems and Docker to streamline development workflows and deploy applications efficiently</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Collaborated with a team of developers and stakeholders, communicating project progress and presenting solutions during regular meetings</span>
-                      </div>
-                    </div>
-                    <div class="course-tags">
-                      <span class="course-tag">PHP & Laravel</span>
-                      <span class="course-tag">Node.js</span>
-                      <span class="course-tag">React</span>
-                      <span class="course-tag">MySQL</span>
-                      <span class="course-tag">Docker</span>
-                      <span class="course-tag">Git Version Control</span>
-                      <span class="course-tag">Full-Stack Development</span>
-                      <span class="course-tag">Team Collaboration</span>
-                    </div>
+                  </h5>
+                  <ul class="timeline-details">
+                    <li>
+                      Developed full-stack web applications using PHP, Laravel,
+                      and Node.js
+                    </li>
+                    <li>
+                      Engineered responsive interfaces with HTML5, CSS3,
+                      Bootstrap, jQuery, and React
+                    </li>
+                    <li>
+                      Managed database operations with MySQL and Database
+                      Fundamentals
+                    </li>
+                    <li>
+                      Utilized Version Control Systems and Docker for efficient
+                      deployment
+                    </li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>PHP & Laravel</span>
+                    <span>Node.js</span>
+                    <span>React</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="education-period">
-                  <div class="period-container">
-                    <div class="calendar-icon">
-                      <i class="far fa-calendar-alt"></i>
-                    </div>
-                    <div class="period-text">
-                      <span class="period-dates">June 2025 - September 2025</span>
-                      <span class="period-duration">6 Months</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Backend Developer Intern - Orange Digital Center -->
-          <div class="education-card">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="education-content">
-                  <span class="degree-tag">Internship</span>
-                  <h3 class="degree-title">Backend Developer Intern</h3>
-                  <h4 class="institution">
-                    <i class="fas fa-building"></i> Orange Digital Center - Cairo, Egypt
-                  </h4>
-                  <div class="coursework">
-                    <h5>Key Responsibilities & Achievements</h5>
-                    <div class="experience-details" style="margin-top: 15px;">
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Developed RESTful APIs using PHP and Laravel for web application projects, enhancing functionality and user experience</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Collaborated with a team to design and implement backend solutions, ensuring secure and efficient data handling</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Optimized API performance through improved database queries and code refactoring</span>
-                      </div>
-                      <div class="responsibility-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; line-height: 1.6;">
-                        <span style="color: #007bff; font-size: 8px; margin-right: 12px; margin-top: 8px; flex-shrink: 0;">●</span>
-                        <span style="color: #666; font-size: 14px;">Gained hands-on experience in Agile workflows, participating in team meetings and code reviews</span>
-                      </div>
-                    </div>
-                    <div class="course-tags">
-                      <span class="course-tag">PHP Development</span>
-                      <span class="course-tag">Laravel Framework</span>
-                      <span class="course-tag">RESTful APIs</span>
-                      <span class="course-tag">Database Optimization</span>
-                      <span class="course-tag">Code Refactoring</span>
-                      <span class="course-tag">Agile Methodology</span>
-                      <span class="course-tag">Team Collaboration</span>
-                      <span class="course-tag">Code Reviews</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="education-period">
-                  <div class="period-container">
-                    <div class="calendar-icon">
-                      <i class="far fa-calendar-alt"></i>
-                    </div>
-                    <div class="period-text">
-                      <span class="period-dates">September 2024 - November 2024</span>
-                      <span class="period-duration">2 Months</span>
-                    </div>
+              <div
+                class="timeline-item"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date"
+                    >September 2024 - November 2024</span
+                  >
+                  <span class="timeline-badge">Internship</span>
+                  <h4>Backend Developer Intern</h4>
+                  <h5>
+                    <i class="fas fa-building"></i> Orange Digital Center -
+                    Cairo, Egypt
+                  </h5>
+                  <ul class="timeline-details">
+                    <li>
+                      Developed RESTful APIs using PHP and Laravel for web
+                      application projects
+                    </li>
+                    <li>
+                      Collaborated with team to design and implement backend
+                      solutions
+                    </li>
+                    <li>
+                      Optimized API performance through improved database
+                      queries
+                    </li>
+                    <li>
+                      Gained experience in Agile workflows and code reviews
+                    </li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>RESTful APIs</span>
+                    <span>Agile</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="group">
-          <div class="row">
-            <div class="skills-section">
-              <div class="container">
+            <!-- Education -->
+            <div class="timeline-section">
+              <h3 class="timeline-heading">
+                <i class="fas fa-graduation-cap"></i> Education
+              </h3>
 
-                <div class="heading">
-                  <h2 class="text-center">Skills</h2>
-                  <div class="heading-underline"></div>
+              <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">September 2020 - May 2024</span>
+                  <span class="timeline-badge">Degree</span>
+                  <h4>Bachelor's in Computers and Artificial Intelligence</h4>
+                  <h5><i class="fas fa-university"></i> Cairo University</h5>
+                  <div class="timeline-tags">
+                    <span>Web Development</span>
+                    <span>Database Systems</span>
+                    <span>OOP</span>
+                    <span>Software Engineering</span>
+                    <span>Data Structures</span>
+                    <span>Algorithms</span>
+                  </div>
                 </div>
-                <div class="row skills-container">
-                  <!-- Programming Languages -->
-                  <div class="col-md-4">
-                    <div class="skill-category">
-                      <div class="skill-category-header">
-                        <div class="skill-icon">
-                          <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Programming Languages</h3>
-                      </div>
+              </div>
+            </div>
 
-                      <div class="skill-list">
-                        <div class="skill-item" data-skill="PHP">
-                          <div class="skill-info">
-                            <span class="skill-name">PHP</span>
+            <!-- Certifications -->
+            <div class="timeline-section">
+              <h3 class="timeline-heading">
+                <i class="fas fa-certificate"></i> Certifications
+              </h3>
 
-                          </div>
-                        </div>
+              <div class="certifications-grid">
+                <div class="cert-card" data-aos="fade-up">
+                  <div class="cert-icon"><i class="fas fa-award"></i></div>
+                  <h4>Full Stack PHP Laravel Development</h4>
+                  <p>ITI - New Capital</p>
+                  <span class="cert-date">September 2025</span>
+                </div>
 
-                        <div class="skill-item" data-skill="JavaScript">
-                          <div class="skill-info">
-                            <span class="skill-name">JavaScript</span>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="cert-icon"><i class="fas fa-award"></i></div>
+                  <h4>Back-End (PHP)</h4>
+                  <p>Orange</p>
+                  <span class="cert-date">November 2024</span>
+                </div>
 
-                          </div>
-                        </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="cert-icon"><i class="fas fa-award"></i></div>
+                  <h4>Software Development Process</h4>
+                  <p>Udacity</p>
+                  <span class="cert-date">April 2022</span>
+                </div>
 
-                        <div class="skill-item" data-skill="OOP">
-                          <div class="skill-info">
-                            <span class="skill-name">OOP</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="Data Structure">
-                          <div class="skill-info">
-                            <span class="skill-name">Data Structure</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="SOLID Principles">
-                          <div class="skill-info">
-                            <span class="skill-name">SOLID Principles</span>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Frameworks & Tools -->
-                  <div class="col-md-4">
-                    <div class="skill-category">
-                      <div class="skill-category-header">
-                        <div class="skill-icon">
-                          <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Frameworks & Tools</h3>
-                      </div>
-
-                      <div class="skill-list">
-                        <div class="skill-item" data-skill="Laravel">
-                          <div class="skill-info">
-                            <span class="skill-name">Laravel</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="WordPress">
-                          <div class="skill-info">
-                            <span class="skill-name">WordPress</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="RESTful APIs">
-                          <div class="skill-info">
-                            <span class="skill-name">RESTful APIs</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="Git & GitHub">
-                          <div class="skill-info">
-                            <span class="skill-name">Git & GitHub</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="MySQL">
-                          <div class="skill-info">
-                            <span class="skill-name">MySQL</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="HTML/CSS">
-                          <div class="skill-info">
-                            <span class="skill-name">HTML/CSS</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="Linux">
-                          <div class="skill-info">
-                            <span class="skill-name">Linux</span>
-
-                          </div>
-                        </div>
-
-                        <div class="skill-item" data-skill="Networks">
-                          <div class="skill-info">
-                            <span class="skill-name">Networks</span>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Soft Skills -->
-                  <div class="col-md-4">
-                    <div class="skill-category">
-                      <div class="skill-category-header">
-                        <div class="skill-icon">
-                          <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Soft Skills</h3>
-                      </div>
-
-                      <div class="skill-list">
-                        <div class="skill-chip">Problem-Solving</div>
-                        <div class="skill-chip">Team Collaboration</div>
-                        <div class="skill-chip">Presentation</div>
-                        <div class="skill-chip">Open To Learn</div>
-                        <div class="skill-chip">Communication</div>
-                        <div class="skill-chip">Time Management</div>
-                        <div class="skill-chip">Adaptability</div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="cert-icon"><i class="fas fa-award"></i></div>
+                  <h4>Programming Foundations</h4>
+                  <p>LinkedIn</p>
+                  <span class="cert-date">August 2022</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <section class="certifications-section">
-          <div class="container">
-            <div class="heading">
-              <h2 class="text-center">Certifications & Courses</h2>
-              <div class="heading-underline"></div>
-            </div>
+      </section>
 
-            <div class="certifications-timeline">
-              <!-- Timeline markers -->
-              <div class="timeline-marker"></div>
-
-              <!-- Certification Items -->
-              <div class="certification-group">
-                <div class="certification-year">
-                  <span>2025</span>
-                </div>
-
-                <div class="certification-items">
-                  <div class="certification-card">
-                    <div class="certification-badge">
-                      <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="certification-content">
-                      <h4>Full Stack PHP Laravel Development</h4>
-                      <div class="certification-meta">
-                        <span class="certification-provider"><i class="fas fa-award"></i> ITI - New Capital</span>
-                        <span class="certification-date"><i class="far fa-calendar-alt"></i> September 2025</span>
-                      </div>
-                      <div class="certification-skills">
-                        <span>PHP</span>
-                        <span>Laravel</span>
-                        <span>Full Stack Development</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="certification-group">
-                <div class="certification-year">
-                  <span>2024</span>
-                </div>
-
-                <div class="certification-items">
-                  <div class="certification-card">
-                    <div class="certification-badge">
-                      <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="certification-content">
-                      <h4>Back-End (PHP)</h4>
-                      <div class="certification-meta">
-                        <span class="certification-provider"><i class="fas fa-building"></i> Orange</span>
-                        <span class="certification-date"><i class="far fa-calendar-alt"></i> November 2024</span>
-                      </div>
-                      <div class="certification-skills">
-                        <span>PHP</span>
-                        <span>Backend Development</span>
-                        <span>Web Development</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="certification-group">
-                <div class="certification-year">
-                  <span>2022</span>
-                </div>
-
-                <div class="certification-items">
-                  <div class="certification-card">
-                    <div class="certification-badge">
-                      <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="certification-content">
-                      <h4>Software Development Process</h4>
-                      <div class="certification-meta">
-                        <span class="certification-provider"><i class="fas fa-building"></i> Udacity</span>
-                        <span class="certification-date"><i class="far fa-calendar-alt"></i> April 2022</span>
-                      </div>
-                      <div class="certification-skills">
-                        <span>Software Engineering</span>
-                        <span>Development Lifecycle</span>
-                        <span>Agile</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="certification-card">
-                    <div class="certification-badge">
-                      <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="certification-content">
-                      <h4>Programming Foundations</h4>
-                      <div class="certification-meta">
-                        <span class="certification-provider"><i class="fas fa-building"></i> LinkedIn</span>
-                        <span class="certification-date"><i class="far fa-calendar-alt"></i> August 2022</span>
-                      </div>
-                      <div class="certification-skills">
-                        <span>Programming</span>
-                        <span>Computer Science</span>
-                        <span>Algorithms</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- Skills Section -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">My Expertise</span>
+            <h2 class="section-title">Skills & Technologies</h2>
           </div>
-        </section>
-      </div>
-      </div>
-    </section>
-  </main>
-  <footer id="contact" class="page-footer">
-    <div class="footer-wave-top">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1"
-          d="M0,192L48,176C96,160,192,128,288,117.3C384,107,480,117,576,138.7C672,160,768,192,864,186.7C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-        </path>
-      </svg>
-    </div>
 
-    <div class="contact-container">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>Get In Touch</h2>
-          <div class="heading-underline"></div>
-          <p class="lead contact-subtitle">Have a question or want to work together? Drop me a message!</p>
-        </div>
+          <!-- Skills Tabs -->
+          <div class="skills-tabs" data-aos="fade-up">
+            <button class="skill-tab active" data-tab="backend">
+              <i class="fas fa-server"></i> Backend
+            </button>
+            <button class="skill-tab" data-tab="frontend">
+              <i class="fas fa-palette"></i> Frontend
+            </button>
+            <button class="skill-tab" data-tab="database">
+              <i class="fas fa-database"></i> Database
+            </button>
+            <button class="skill-tab" data-tab="tools">
+              <i class="fas fa-tools"></i> Tools
+            </button>
+          </div>
 
-        <div class="row contact-content">
-          <!-- Contact Form Section -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="contact-form-card">
-              <div class="card-header">
-                <div class="form-icon">
+          <!-- Skills Content -->
+          <div class="skills-content" data-aos="fade-up" data-aos-delay="100">
+            <!-- Backend -->
+            <div class="skill-panel active" id="backend">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-php"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-laravel"></i>
+                  <span>Laravel</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-exchange-alt"></i>
+                  <span>RESTful APIs</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-layer-group"></i>
+                  <span>MVC</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-puzzle-piece"></i>
+                  <span>SOLID</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-wordpress"></i>
+                  <span>WordPress</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-panel" id="frontend">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-bootstrap"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-angular"></i>
+                  <span>Angular</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-panel" id="database">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fas fa-database"></i>
+                  <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-leaf"></i>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-panel" id="tools">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git & GitHub</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-linux"></i>
+                  <span>Linux</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-docker"></i>
+                  <span>Docker</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-feather-alt"></i>
+                  <span>Apache</span>
+                </div>
+                <div class="skill-card">
                   <i class="fas fa-paper-plane"></i>
+                  <span>Postman</span>
                 </div>
-                <h3>Send A Message</h3>
+                <div class="skill-card">
+                  <i class="fab fa-aws"></i>
+                  <span>AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div
+            class="soft-skills-section"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3><i class="fas fa-users"></i> Soft Skills</h3>
+            <div class="soft-skills-list">
+              <span class="soft-skill-tag">Problem-Solving</span>
+              <span class="soft-skill-tag">Team Collaboration</span>
+              <span class="soft-skill-tag">Communication</span>
+              <span class="soft-skill-tag">Presentation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-description">
+              Have a question or want to work together? Drop me a message!
+            </p>
+          </div>
+
+          <div class="contact-wrapper">
+            <div class="contact-info" data-aos="fade-right">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Name</h4>
+                  <p>Mohamed Ahmed Abdelghany</p>
+                </div>
               </div>
 
-              <form action="https://formspree.io/f/xnnnnldg" method="post" id="contactForm">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Location</h4>
+                  <p>Maadi, Cairo, Egypt</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Phone</h4>
+                  <a href="tel:+201025435043">+20 102-543-5043</a>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Email</h4>
+                  <a href="mailto:moabdelghany77@gmail.com"
+                    >moabdelghany77@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper" data-aos="fade-left">
+              <form
+                action="https://formspree.io/f/xnnnnldg"
+                method="POST"
+                class="contact-form"
+                id="contact-form"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder=" "
+                  />
                   <label for="name">Your Name</label>
+                  <span class="form-icon"><i class="fas fa-user"></i></span>
                 </div>
 
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder=" "
+                  />
                   <label for="email">Your Email</label>
+                  <span class="form-icon"><i class="fas fa-envelope"></i></span>
                 </div>
 
-                <div class="form-floating mb-4">
-                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required
-                    style="height: 150px"></textarea>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="subject">Subject</label>
+                  <span class="form-icon"><i class="fas fa-tag"></i></span>
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder=" "
+                  ></textarea>
                   <label for="message">Your Message</label>
+                  <span class="form-icon"><i class="fas fa-comment"></i></span>
                 </div>
 
-                <button class="btn btn-primary btn-lg w-100 send-btn" type="submit" name="submit">
+                <button type="submit" class="btn btn-primary btn-submit">
                   <span>Send Message</span>
-                  <i class="fas fa-arrow-right"></i>
+                  <i class="fas fa-paper-plane"></i>
                 </button>
 
-                <div class="form-status mt-3 text-center">
-                  <!-- Success/error messages will appear here -->
-                </div>
+                <div class="form-status" id="form-status"></div>
               </form>
             </div>
           </div>
+        </div>
+      </section>
+    </main>
 
-          <!-- Contact Info Section -->
-          <div class="col-lg-6">
-            <div class="contact-info-card">
-              <div class="card-header">
-                <div class="info-icon">
-                  <i class="fas fa-address-card"></i>
-                </div>
-                <h3>Contact Information</h3>
-              </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span>&lt;MA/&gt;</span>
+            <p>Backend Developer</p>
+          </div>
 
-              <div class="contact-details">
-                <div class="contact-item">
-                  <div class="icon-box">
-                    <i class="fas fa-user-circle"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Name</h4>
-                    <p>Mohamed Ahmed Abdelghany</p>
-                  </div>
-                </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
 
-                <div class="contact-item">
-                  <div class="icon-box">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Location</h4>
-                    <p>5th. Maadi, Cairo, Egypt</p>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="icon-box">
-                    <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Call Me</h4>
-                    <a href="tel:+201025435043" class="contact-link">+20 102-543-5043</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="icon-box">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Email Me</h4>
-                    <a href="mailto:moabdelghany77@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Mohamed,"
-                      class="contact-link">moabdelghany77@gmail.com</a>
-                  </div>
-                </div>
-
-                <div class="social-section">
-                  <h4>Connect With Me</h4>
-                  <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7" class="social-icon linkedin"
-                      target="_blank" aria-label="LinkedIn">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/abdelghany-77" class="social-icon github" target="_blank"
-                      aria-label="GitHub">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:moabdelghany77@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Mohamed,"
-                      class="social-icon email" aria-label="Email">
-                      <i class="fas fa-envelope"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/abdelghany-77"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year">2025</span> Mohamed Abdelghany. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+
+      <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </footer>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav prev" id="lightbox-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img src="" alt="Project Screenshot" id="lightbox-img" />
+        <button class="lightbox-nav next" id="lightbox-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="copyright">
-          <p>&copy; <span id="current-year">2025</span> <strong>Abdelghany</strong>. All rights reserved.</p>
-        </div>
-        <div class="footer-nav">
-          <a href="#" class="back-to-top" aria-label="Back to top">
-            <i class="fas fa-chevron-up"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-  <script src="/assets/js/script.min.js?h=93ba179fa52dd72fece483aba133cf5f"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
