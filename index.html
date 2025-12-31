@@ -1,1399 +1,1137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Mohamed Abdelghany | Backend Developer</title>
-    <meta
-      name="description"
-      content="Backend Developer specializing in PHP, Laravel, and MySQL. Building robust server-side applications and scalable APIs."
-    />
-    <meta
-      name="keywords"
-      content="Backend Developer, PHP, Laravel, MySQL, Web Development, Cairo, Egypt"
-    />
-    <meta name="author" content="Mohamed Abdelghany" />
 
-    <!-- Open Graph / Social Media -->
-    <meta
-      property="og:title"
-      content="Mohamed Abdelghany | Backend Developer"
-    />
-    <meta
-      property="og:description"
-      content="Backend Developer specializing in PHP, Laravel, NodeJs, and MySQL."
-    />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Mohamed Abdelghany | Backend Developer</title>
+  <meta name="description"
+    content="Backend Developer specializing in PHP, Laravel, and MySQL. Building robust server-side applications and scalable APIs." />
+  <meta name="keywords" content="Backend Developer, PHP, Laravel, MySQL, Web Development, Cairo, Egypt" />
+  <meta name="author" content="Mohamed Abdelghany" />
 
-    <!-- Preconnect to external domains for faster loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Mohamed Abdelghany | Backend Developer" />
+  <meta property="og:description" content="Backend Developer specializing in PHP, Laravel, NodeJs, and MySQL." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abdelghany-77.github.io/" />
+  <meta property="og:image" content="https://abdelghany-77.github.io/assets/img/avatars/my-photo.png" />
 
-    <!-- DNS Prefetch for external resources -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohamed Abdelghany | Backend Developer" />
+  <meta name="twitter:description" content="Backend Developer specializing in PHP, Laravel, NodeJs, and MySQL." />
+  <meta name="twitter:image" content="https://abdelghany-77.github.io/assets/img/avatars/my-photo.png" />
 
-    <!-- Critical CSS inline for above-the-fold content -->
-    <style>
-      /* Critical CSS for initial render */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #fff;
-        overflow-x: hidden;
-      }
-      .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10000;
-      }
-      .loader {
-        width: 50px;
-        height: 50px;
-        border: 3px solid #e2e8f0;
-        border-radius: 50%;
-        position: relative;
-      }
-      .loader-inner {
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        width: 50px;
-        height: 50px;
-        border: 3px solid transparent;
-        border-top-color: #2563eb;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      }
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://abdelghany-77.github.io/" />
 
-    <!-- Fonts - Load asynchronously with font-display: swap -->
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Critical CSS inline for above-the-fold content -->
+  <style>
+    /* Critical CSS for initial render */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 3px solid #e2e8f0;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .loader-inner {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 50px;
+      height: 50px;
+      border: 3px solid transparent;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <!-- Fonts - Load asynchronously with font-display: swap -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
+      rel="stylesheet" />
+  </noscript>
 
-    <!-- Icons - Load asynchronously -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      />
-    </noscript>
+  <!-- Icons - Load asynchronously -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </noscript>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/avatars/my-photo.png" />
 
-  <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-      <div class="loader">
-        <div class="loader-inner"></div>
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohamed Abdelghany",
+        "jobTitle": "Backend Developer",
+        "url": "https://abdelghany-77.github.io/",
+        "image": "https://abdelghany-77.github.io/assets/img/avatars/my-photo.png",
+        "email": "moabdelghany77@gmail.com",
+        "telephone": "+201025435043",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Maadi, Cairo",
+          "addressCountry": "Egypt"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7",
+          "https://github.com/abdelghany-77"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Cairo University"
+        },
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "Node.js",
+          "MySQL",
+          "MongoDB",
+          "RESTful APIs",
+          "Web Development"
+        ]
+      }
+    </script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader">
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">&lt;MA/&gt;</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+  <!-- Scroll Progress -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+
       <div class="container">
-        <a href="#home" class="nav-logo">
-          <span class="logo-text">&lt;MA/&gt;</span>
-        </a>
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-greeting">Hello, I'm</span>
+            <h1 class="hero-name">
+              Mohamed <span class="highlight">Abdelghany</span>
+            </h1>
+            <div class="hero-title">
+              <span class="typed-text" id="typed-text"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+              I graduated from the Faculty of Computer Science and am
+              extremely motivated to develop my skills in back-end
+              engineering. As a strong team player, I can quickly learn and
+              implement new technologies while consistently growing
+              professionally.
+            </p>
 
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <span>Contact Me</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+              <a href="assets/Pdf/Mohamed_Abdelghany_CV.pdf" class="btn btn-outline"
+                download="Mohamed_Abdelghany_CV.pdf" type="application/pdf">
+                <span>Download CV</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
 
-        <div class="nav-actions">
-          <button
-            class="theme-toggle"
-            id="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            <i class="fas fa-moon"></i>
-          </button>
-          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="1">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="6">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <div class="image-glow"></div>
+              <img src="assets/img/avatars/my-photo.png" alt="Mohamed Abdelghany" class="profile-img" width="350"
+                height="350" fetchpriority="high" />
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/abdelghany-77" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Scroll Progress -->
-    <div class="scroll-progress">
-      <div class="scroll-progress-bar" id="scroll-progress"></div>
-    </div>
+      <a href="#services" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="hero-bg">
-          <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-          </div>
-          <div class="hero-particles" id="particles"></div>
-        </div>
-
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <span class="hero-greeting">Hello, I'm</span>
-              <h1 class="hero-name">
-                Mohamed <span class="highlight">Abdelghany</span>
-              </h1>
-              <div class="hero-title">
-                <span class="typed-text" id="typed-text"></span>
-                <span class="cursor">|</span>
-              </div>
-              <p class="hero-description">
-                I graduated from the Faculty of Computer Science and am
-                extremely motivated to develop my skills in back-end
-                engineering. As a strong team player, I can quickly learn and
-                implement new technologies while consistently growing
-                professionally.
-              </p>
-
-              <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                  <span>Contact Me</span>
-                  <i class="fas fa-paper-plane"></i>
-                </a>
-                <a
-                  href="assets/Pdf/Mohamed_Abdelghany_CV.pdf"
-                  class="btn btn-outline"
-                  download="Mohamed_Abdelghany_CV.pdf"
-                  type="application/pdf"
-                >
-                  <span>Download CV</span>
-                  <i class="fas fa-download"></i>
-                </a>
-              </div>
-
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number" data-count="1">0</span>
-                  <span class="stat-plus">+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number" data-count="6">0</span>
-                  <span class="stat-plus">+</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number" data-count="4">0</span>
-                  <span class="stat-plus">+</span>
-                  <span class="stat-label">Certifications</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero-image">
-              <div class="image-wrapper">
-                <div class="image-glow"></div>
-                <img
-                  src="assets/img/avatars/my-photo.png"
-                  alt="Mohamed Abdelghany"
-                  class="profile-img"
-                  width="350"
-                  height="350"
-                  fetchpriority="high"
-                />
-              </div>
-              <div class="social-links">
-                <a
-                  href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://github.com/abdelghany-77"
-                  target="_blank"
-                  aria-label="GitHub"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="#services" class="scroll-down">
-          <span>Scroll Down</span>
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </section>
-
-      <!-- Services Section -->
-      <section class="services" id="services">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">What I Do</span>
-            <h2 class="section-title">Services</h2>
-            <p class="section-description">
-              Specialized in building robust backend solutions and web
-              applications
-            </p>
-          </div>
-
-          <div class="services-grid">
-            <div class="service-card" data-aos="fade-up">
-              <div class="service-icon">
-                <i class="fas fa-server"></i>
-              </div>
-              <h3>Backend Development</h3>
-              <p>
-                Building robust server-side applications with PHP, Laravel, and
-                MySQL. I specialize in creating scalable APIs, database
-                optimization, and secure authentication systems.
-              </p>
-              <ul class="service-features">
-                <li><i class="fas fa-check"></i> API Development</li>
-                <li><i class="fas fa-check"></i> Database Design</li>
-                <li><i class="fas fa-check"></i> Server Configuration</li>
-              </ul>
-            </div>
-
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-icon">
-                <i class="fas fa-laptop-code"></i>
-              </div>
-              <h3>Web Applications</h3>
-              <p>
-                Creating custom web applications that solve business problems
-                efficiently. From e-commerce solutions to content management
-                systems.
-              </p>
-              <ul class="service-features">
-                <li><i class="fas fa-check"></i> Custom Web Apps</li>
-                <li><i class="fas fa-check"></i> E-commerce Systems</li>
-                <li><i class="fas fa-check"></i> CMS Development</li>
-              </ul>
-            </div>
-
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <h3>Security Implementation</h3>
-              <p>
-                Implementing best practices for web application security, from
-                authentication systems to data validation and protection.
-              </p>
-              <ul class="service-features">
-                <li><i class="fas fa-check"></i> Secure Authentication</li>
-                <li><i class="fas fa-check"></i> Data Protection</li>
-                <li><i class="fas fa-check"></i> Security Auditing</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="projects" id="projects">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">My Work</span>
-            <h2 class="section-title">Recent Projects</h2>
-            <p class="section-description">
-              A showcase of my latest development work
-            </p>
-          </div>
-
-          <div class="projects-filter">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="laravel">Laravel</button>
-            <button class="filter-btn" data-filter="nodejs">Node.js</button>
-            <button class="filter-btn" data-filter="fullstack">
-              Full Stack
-            </button>
-          </div>
-
-          <div class="projects-grid">
-            <!-- Clinic System -->
-            <div
-              class="project-card"
-              data-category="fullstack"
-              data-aos="fade-up"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/clinic-system/clinic-system e.jpg"
-                      alt="thumblinail"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/clinic-system/clinic-system1.png"
-                      alt="Clinic Dashboard"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/clinic-system/clinic-system2.png"
-                      alt="Clinic Appointments"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/clinic-system/clinic-system3.png"
-                      alt="Clinic Patients"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/clinic-system/clinic-system4.png"
-                      alt="Clinic Admin"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/abdelghany-77/clinic-system"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>Clinic System</h3>
-                <p>
-                  Clinic management system with appointment booking, patient
-                  records, and admin dashboard.
-                </p>
-                <div class="project-tech">
-                  <span>Node.js</span>
-                  <span>Express.js</span>
-                  <span>MongoDB</span>
-                  <span>TypeScript</span>
-                  <span>React</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- ITI E-Book Platform -->
-            <div
-              class="project-card"
-              data-category="nodejs fullstack"
-              data-aos="fade-up"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook.png"
-                      alt="E-Book Landing"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook2.png"
-                      alt="E-Book Homepage"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook3.png"
-                      alt="E-Book Shop"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook4.png"
-                      alt="E-Book Browse"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook5.png"
-                      alt="E-Book Login"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook6.png"
-                      alt="E-Book Details"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook7.png"
-                      alt="E-Book Cart"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ebook-ITI/ebook8.png"
-                      alt="E-Book Checkout"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/m-devo/ITI-ECommerce-Backend"
-                    target="_blank"
-                    class="project-link"
-                    title="Backend Repo"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://github.com/m-devo/ITI-ECommerce-Frontend"
-                    target="_blank"
-                    class="project-link"
-                    title="Frontend Repo"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>ITI E-Book Platform</h3>
-                <p>
-                  Full-stack e-book platform with user authentication, book
-                  browsing, shopping cart, and secure checkout. Deployed on AWS
-                  EC2.
-                </p>
-                <div class="project-tech">
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>MongoDB</span>
-                  <span>Angular</span>
-                  <span>AWS</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- E-Commerce System -->
-            <div
-              class="project-card"
-              data-category="laravel fullstack"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/Ecommerce/e.png"
-                      alt="E-Commerce "
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e1.png"
-                      alt="E-Commerce Dashboard"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e2.png"
-                      alt="E-Commerce Products"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e3.png"
-                      alt="E-Commerce Catalog"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e4.png"
-                      alt="E-Commerce Orders"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e5.png"
-                      alt="E-Commerce Cart"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e8.png"
-                      alt="E-Commerce Profile"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e9.png"
-                      alt="E-Commerce Payment"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Ecommerce/e10.png"
-                      alt="E-Commerce History"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/abdelghany-77/E-Commerce-System"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>E-Commerce System</h3>
-                <p>
-                  Full-featured e-commerce platform with product catalog,
-                  shopping cart, and secure checkout system.
-                </p>
-                <div class="project-tech">
-                  <span>Laravel 12</span>
-                  <span>PHP</span>
-                  <span>MySQL</span>
-                  <span>Bootstrap 5</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Expense Tracker -->
-            <div
-              class="project-card"
-              data-category="laravel fullstack"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin.png"
-                      alt="Expense Dashboard"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin1.png"
-                      alt="Expense Dashboard"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin 2.png"
-                      alt="Expense Transactions"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin3.png"
-                      alt="Expense Budget"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin4.png"
-                      alt="Expense Goals"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin5.png"
-                      alt="Expense Reports"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin6.png"
-                      alt="Expense Categories"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Expense Tracker/fin7.png"
-                      alt="Expense Analytics"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/abdelghany-77/Expense-Tracker"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>Expense Tracker</h3>
-                <p>
-                  Comprehensive financial management system with real-time
-                  expense tracking, budget planning, and savings goals.
-                </p>
-                <div class="project-tech">
-                  <span>Laravel</span>
-                  <span>PHP</span>
-                  <span>MySQL</span>
-                  <span>Chart.js</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media Content Scheduler -->
-            <div
-              class="project-card"
-              data-category="laravel fullstack"
-              data-aos="fade-up"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/Content/content.png"
-                      alt="Scheduler Home"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content1.png"
-                      alt="Scheduler Home"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content2.png"
-                      alt="Scheduler Dashboard"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content3.png"
-                      alt="Scheduler Posts"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content4.png"
-                      alt="Scheduler Analytics"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content5.png"
-                      alt="Scheduler Settings"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Content/content6.png"
-                      alt="Scheduler Profile"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/abdelghany-77"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>Content Scheduler</h3>
-                <p>
-                  Platform for scheduling and automating posts across multiple
-                  social media platforms with analytics dashboard.
-                </p>
-                <div class="project-tech">
-                  <span>Laravel 12</span>
-                  <span>PHP 8.2</span>
-                  <span>Chart.js</span>
-                  <span>FullCalendar</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Blog Platform -->
-            <div
-              class="project-card"
-              data-category="laravel"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <div class="carousel-slides">
-                    <img
-                      src="assets/img/Projects/Blog/blog1.png"
-                      alt="Blog Homepage"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Blog/blog2.png"
-                      alt="Blog Article"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Blog/blog3.png"
-                      alt="Blog Admin"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Blog/blog4.png"
-                      alt="Blog Management"
-                      loading="lazy"
-                    />
-                    
-                    <img
-                      src="assets/img/Projects/Blog/blog6.png"
-                      alt="Blog Comments"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Blog/blog7.png"
-                      alt="Blog Categories"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/img/Projects/Blog/blog8.png"
-                      alt="Blog Mobile"
-                      loading="lazy"
-                    />
-                  </div>
-                  <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                  <div class="carousel-dots"></div>
-                </div>
-                <div class="project-overlay">
-                  <button class="expand-btn" title="View Full Image">
-                    <i class="fas fa-expand"></i>
-                  </button>
-                  <a
-                    href="https://github.com/abdelghany-77/Blog"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3>Blog Platform</h3>
-                <p>
-                  Feature-rich blog platform with dynamic content management,
-                  commenting system, and SEO optimization.
-                </p>
-                <div class="project-tech">
-                  <span>Laravel</span>
-                  <span>Blade</span>
-                  <span>MySQL</span>
-                  <span>Bootstrap</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section class="experience" id="experience">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">My Journey</span>
-            <h2 class="section-title">Experience & Education</h2>
-          </div>
-
-          <div class="timeline">
-            <!-- Work Experience -->
-            <div class="timeline-section">
-              <h3 class="timeline-heading">
-                <i class="fas fa-briefcase"></i> Work Experience
-              </h3>
-
-              <div class="timeline-item" data-aos="fade-right">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-date">June 2025 - September 2025</span>
-                  <span class="timeline-badge">Training</span>
-                  <h4>Full Stack Trainee</h4>
-                  <h5>
-                    <i class="fas fa-building"></i> ITI - New Capital, Egypt
-                  </h5>
-                  <ul class="timeline-details">
-                    <li>
-                      Developed full-stack web applications using PHP, Laravel,
-                      and Node.js
-                    </li>
-                    <li>
-                      Engineered responsive interfaces with HTML5, CSS3,
-                      Bootstrap, jQuery, and React
-                    </li>
-                    <li>
-                      Managed database operations with MySQL and Database
-                      Fundamentals
-                    </li>
-                    <li>
-                      Utilized Version Control Systems and Docker for efficient
-                      deployment
-                    </li>
-                  </ul>
-                  <div class="timeline-tags">
-                    <span>PHP & Laravel</span>
-                    <span>Node.js</span>
-                    <span>React</span>
-                    <span>MySQL</span>
-                    <span>Docker</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-date"
-                    >September 2024 - November 2024</span
-                  >
-                  <span class="timeline-badge">Internship</span>
-                  <h4>Backend Developer Intern</h4>
-                  <h5>
-                    <i class="fas fa-building"></i> Orange Digital Center -
-                    Cairo, Egypt
-                  </h5>
-                  <ul class="timeline-details">
-                    <li>
-                      Developed RESTful APIs using PHP and Laravel for web
-                      application projects
-                    </li>
-                    <li>
-                      Collaborated with team to design and implement backend
-                      solutions
-                    </li>
-                    <li>
-                      Optimized API performance through improved database
-                      queries
-                    </li>
-                    <li>
-                      Gained experience in Agile workflows and code reviews
-                    </li>
-                  </ul>
-                  <div class="timeline-tags">
-                    <span>PHP</span>
-                    <span>Laravel</span>
-                    <span>RESTful APIs</span>
-                    <span>Agile</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Education -->
-            <div class="timeline-section">
-              <h3 class="timeline-heading">
-                <i class="fas fa-graduation-cap"></i> Education
-              </h3>
-
-              <div class="timeline-item" data-aos="fade-left">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-date">September 2020 - May 2024</span>
-                  <span class="timeline-badge">Degree</span>
-                  <h4>Bachelor's in Computers and Artificial Intelligence</h4>
-                  <h5><i class="fas fa-university"></i> Cairo University</h5>
-                  <div class="timeline-tags">
-                    <span>Web Development</span>
-                    <span>Database Systems</span>
-                    <span>OOP</span>
-                    <span>Software Engineering</span>
-                    <span>Data Structures</span>
-                    <span>Algorithms</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="timeline-section">
-              <h3 class="timeline-heading">
-                <i class="fas fa-certificate"></i> Certifications
-              </h3>
-
-              <div class="certifications-grid">
-                <div class="cert-card" data-aos="fade-up">
-                  <div class="cert-icon"><i class="fas fa-award"></i></div>
-                  <h4>Full Stack PHP Laravel Development</h4>
-                  <p>ITI - New Capital</p>
-                  <span class="cert-date">September 2025</span>
-                </div>
-
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
-                  <div class="cert-icon"><i class="fas fa-award"></i></div>
-                  <h4>Back-End (PHP)</h4>
-                  <p>Orange</p>
-                  <span class="cert-date">November 2024</span>
-                </div>
-
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-                  <div class="cert-icon"><i class="fas fa-award"></i></div>
-                  <h4>Software Development Process</h4>
-                  <p>Udacity</p>
-                  <span class="cert-date">April 2022</span>
-                </div>
-
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
-                  <div class="cert-icon"><i class="fas fa-award"></i></div>
-                  <h4>Programming Foundations</h4>
-                  <p>LinkedIn</p>
-                  <span class="cert-date">August 2022</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section class="skills" id="skills">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">My Expertise</span>
-            <h2 class="section-title">Skills & Technologies</h2>
-          </div>
-
-          <!-- Skills Tabs -->
-          <div class="skills-tabs" data-aos="fade-up">
-            <button class="skill-tab active" data-tab="backend">
-              <i class="fas fa-server"></i> Backend
-            </button>
-            <button class="skill-tab" data-tab="frontend">
-              <i class="fas fa-palette"></i> Frontend
-            </button>
-            <button class="skill-tab" data-tab="database">
-              <i class="fas fa-database"></i> Database
-            </button>
-            <button class="skill-tab" data-tab="tools">
-              <i class="fas fa-tools"></i> Tools
-            </button>
-          </div>
-
-          <!-- Skills Content -->
-          <div class="skills-content" data-aos="fade-up" data-aos-delay="100">
-            <!-- Backend -->
-            <div class="skill-panel active" id="backend">
-              <div class="skills-grid">
-                <div class="skill-card">
-                  <i class="fab fa-php"></i>
-                  <span>PHP</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-laravel"></i>
-                  <span>Laravel</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-node-js"></i>
-                  <span>Node.js</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-exchange-alt"></i>
-                  <span>RESTful APIs</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-layer-group"></i>
-                  <span>MVC</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-puzzle-piece"></i>
-                  <span>SOLID</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-wordpress"></i>
-                  <span>WordPress</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Frontend -->
-            <div class="skill-panel" id="frontend">
-              <div class="skills-grid">
-                <div class="skill-card">
-                  <i class="fab fa-html5"></i>
-                  <span>HTML5</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-css3-alt"></i>
-                  <span>CSS3</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-bootstrap"></i>
-                  <span>Bootstrap</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-js"></i>
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-react"></i>
-                  <span>React</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-angular"></i>
-                  <span>Angular</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Database -->
-            <div class="skill-panel" id="database">
-              <div class="skills-grid">
-                <div class="skill-card">
-                  <i class="fas fa-database"></i>
-                  <span>MySQL</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-leaf"></i>
-                  <span>MongoDB</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tools -->
-            <div class="skill-panel" id="tools">
-              <div class="skills-grid">
-                <div class="skill-card">
-                  <i class="fab fa-git-alt"></i>
-                  <span>Git & GitHub</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-linux"></i>
-                  <span>Linux</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-docker"></i>
-                  <span>Docker</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-feather-alt"></i>
-                  <span>Apache</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fas fa-paper-plane"></i>
-                  <span>Postman</span>
-                </div>
-                <div class="skill-card">
-                  <i class="fab fa-aws"></i>
-                  <span>AWS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Soft Skills -->
-          <div
-            class="soft-skills-section"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <h3><i class="fas fa-users"></i> Soft Skills</h3>
-            <div class="soft-skills-list">
-              <span class="soft-skill-tag">Problem-Solving</span>
-              <span class="soft-skill-tag">Team Collaboration</span>
-              <span class="soft-skill-tag">Communication</span>
-              <span class="soft-skill-tag">Presentation</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">Get In Touch</span>
-            <h2 class="section-title">Contact Me</h2>
-            <p class="section-description">
-              Have a question or want to work together? Drop me a message!
-            </p>
-          </div>
-
-          <div class="contact-wrapper">
-            <div class="contact-info" data-aos="fade-right">
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="fas fa-user"></i>
-                </div>
-                <div class="info-content">
-                  <h4>Name</h4>
-                  <p>Mohamed Ahmed Abdelghany</p>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="info-content">
-                  <h4>Location</h4>
-                  <p>Maadi, Cairo, Egypt</p>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="info-content">
-                  <h4>Phone</h4>
-                  <a href="tel:+201025435043">+20 102-543-5043</a>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info-content">
-                  <h4>Email</h4>
-                  <a href="mailto:moabdelghany77@gmail.com"
-                    >moabdelghany77@gmail.com</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-form-wrapper" data-aos="fade-left">
-              <form
-                action="https://formspree.io/f/xnnnnldg"
-                method="POST"
-                class="contact-form"
-                id="contact-form"
-              >
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    required
-                    placeholder=" "
-                  />
-                  <label for="name">Your Name</label>
-                  <span class="form-icon"><i class="fas fa-user"></i></span>
-                </div>
-
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    placeholder=" "
-                  />
-                  <label for="email">Your Email</label>
-                  <span class="form-icon"><i class="fas fa-envelope"></i></span>
-                </div>
-
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    required
-                    placeholder=" "
-                  />
-                  <label for="subject">Subject</label>
-                  <span class="form-icon"><i class="fas fa-tag"></i></span>
-                </div>
-
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="5"
-                    required
-                    placeholder=" "
-                  ></textarea>
-                  <label for="message">Your Message</label>
-                  <span class="form-icon"><i class="fas fa-comment"></i></span>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-submit">
-                  <span>Send Message</span>
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-
-                <div class="form-status" id="form-status"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Services Section -->
+    <section class="services" id="services">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span>&lt;MA/&gt;</span>
-            <p>Backend Developer</p>
-          </div>
-
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-
-          <div class="footer-social">
-            <a
-              href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://github.com/abdelghany-77"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>
-            &copy; <span id="current-year">2025</span> Mohamed Abdelghany. All
-            rights reserved.
+        <div class="section-header">
+          <span class="section-subtitle">What I Do</span>
+          <h2 class="section-title">Services</h2>
+          <p class="section-description">
+            Specialized in building robust backend solutions and web
+            applications
           </p>
         </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>
+              Building robust server-side applications with PHP, Laravel, and
+              MySQL. I specialize in creating scalable APIs, database
+              optimization, and secure authentication systems.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> API Development</li>
+              <li><i class="fas fa-check"></i> Database Design</li>
+              <li><i class="fas fa-check"></i> Server Configuration</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Web Applications</h3>
+            <p>
+              Creating custom web applications that solve business problems
+              efficiently. From e-commerce solutions to content management
+              systems.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Custom Web Apps</li>
+              <li><i class="fas fa-check"></i> E-commerce Systems</li>
+              <li><i class="fas fa-check"></i> CMS Development</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Security Implementation</h3>
+            <p>
+              Implementing best practices for web application security, from
+              authentication systems to data validation and protection.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Secure Authentication</li>
+              <li><i class="fas fa-check"></i> Data Protection</li>
+              <li><i class="fas fa-check"></i> Security Auditing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Work</span>
+          <h2 class="section-title">Recent Projects</h2>
+          <p class="section-description">
+            A showcase of my latest development work
+          </p>
+        </div>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="laravel">Laravel</button>
+          <button class="filter-btn" data-filter="nodejs">Node.js</button>
+          <button class="filter-btn" data-filter="fullstack">
+            Full Stack
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Clinic System -->
+          <div class="project-card" data-category="fullstack" data-aos="fade-up">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/clinic-system/clinic-system e.jpg" alt="Clinic System Thumbnail"
+                    loading="lazy" width="600" height="400" />
+                  <img src="assets/img/Projects/clinic-system/clinic-system1.png" alt="Clinic Dashboard"
+                    loading="lazy" />
+                  <img src="assets/img/Projects/clinic-system/clinic-system2.png" alt="Clinic Appointments"
+                    loading="lazy" />
+                  <img src="assets/img/Projects/clinic-system/clinic-system3.png" alt="Clinic Patients"
+                    loading="lazy" />
+                  <img src="assets/img/Projects/clinic-system/clinic-system4.png" alt="Clinic Admin" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/abdelghany-77/clinic-system" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Clinic System</h3>
+              <p>
+                Clinic management system with appointment booking, patient
+                records, and admin dashboard.
+              </p>
+              <div class="project-tech">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>TypeScript</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITI E-Book Platform -->
+          <div class="project-card" data-category="nodejs fullstack" data-aos="fade-up">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/Ebook-ITI/ebook.png" alt="E-Book Landing" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook2.png" alt="E-Book Homepage" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook3.png" alt="E-Book Shop" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook4.png" alt="E-Book Browse" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook5.png" alt="E-Book Login" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook6.png" alt="E-Book Details" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook7.png" alt="E-Book Cart" loading="lazy" />
+                  <img src="assets/img/Projects/Ebook-ITI/ebook8.png" alt="E-Book Checkout" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/m-devo/ITI-ECommerce-Backend" target="_blank" rel="noopener noreferrer"
+                  class="project-link" title="Backend Repo">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/m-devo/ITI-ECommerce-Frontend" target="_blank" rel="noopener noreferrer"
+                  class="project-link" title="Frontend Repo">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>ITI E-Book Platform</h3>
+              <p>
+                Full-stack e-book platform with user authentication, book
+                browsing, shopping cart, and secure checkout. Deployed on AWS
+                EC2.
+              </p>
+              <div class="project-tech">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Angular</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce System -->
+          <div class="project-card" data-category="laravel fullstack" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/Ecommerce/e.png" alt="E-Commerce " loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e1.png" alt="E-Commerce Dashboard" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e2.png" alt="E-Commerce Products" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e3.png" alt="E-Commerce Catalog" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e4.png" alt="E-Commerce Orders" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e5.png" alt="E-Commerce Cart" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e8.png" alt="E-Commerce Profile" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e9.png" alt="E-Commerce Payment" loading="lazy" />
+                  <img src="assets/img/Projects/Ecommerce/e10.png" alt="E-Commerce History" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/abdelghany-77/E-Commerce-System" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce System</h3>
+              <p>
+                Full-featured e-commerce platform with product catalog,
+                shopping cart, and secure checkout system.
+              </p>
+              <div class="project-tech">
+                <span>Laravel 12</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap 5</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expense Tracker -->
+          <div class="project-card" data-category="laravel fullstack" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/Expense Tracker/fin.png" alt="Expense Dashboard" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin1.png" alt="Expense Dashboard" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin 2.png" alt="Expense Transactions" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin3.png" alt="Expense Budget" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin4.png" alt="Expense Goals" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin5.png" alt="Expense Reports" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin6.png" alt="Expense Categories" loading="lazy" />
+                  <img src="assets/img/Projects/Expense Tracker/fin7.png" alt="Expense Analytics" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/abdelghany-77/Expense-Tracker" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Expense Tracker</h3>
+              <p>
+                Comprehensive financial management system with real-time
+                expense tracking, budget planning, and savings goals.
+              </p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Content Scheduler -->
+          <div class="project-card" data-category="laravel fullstack" data-aos="fade-up">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/Content/content.png" alt="Scheduler Home" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content1.png" alt="Scheduler Home" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content2.png" alt="Scheduler Dashboard" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content3.png" alt="Scheduler Posts" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content4.png" alt="Scheduler Analytics" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content5.png" alt="Scheduler Settings" loading="lazy" />
+                  <img src="assets/img/Projects/Content/content6.png" alt="Scheduler Profile" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/abdelghany-77" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Content Scheduler</h3>
+              <p>
+                Platform for scheduling and automating posts across multiple
+                social media platforms with analytics dashboard.
+              </p>
+              <div class="project-tech">
+                <span>Laravel 12</span>
+                <span>PHP 8.2</span>
+                <span>Chart.js</span>
+                <span>FullCalendar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Platform -->
+          <div class="project-card" data-category="laravel" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <img src="assets/img/Projects/Blog/blog1.png" alt="Blog Homepage" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog2.png" alt="Blog Article" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog3.png" alt="Blog Admin" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog4.png" alt="Blog Management" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog6.png" alt="Blog Comments" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog7.png" alt="Blog Categories" loading="lazy" />
+                  <img src="assets/img/Projects/Blog/blog8.png" alt="Blog Mobile" loading="lazy" />
+                </div>
+                <button class="carousel-btn prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="project-overlay">
+                <button class="expand-btn" title="View Full Image">
+                  <i class="fas fa-expand"></i>
+                </button>
+                <a href="https://github.com/abdelghany-77/Blog" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Blog Platform</h3>
+              <p>
+                Feature-rich blog platform with dynamic content management,
+                commenting system, and SEO optimization.
+              </p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>Blade</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Journey</span>
+          <h2 class="section-title">Experience & Education</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Work Experience -->
+          <div class="timeline-section">
+            <h3 class="timeline-heading">
+              <i class="fas fa-briefcase"></i> Work Experience
+            </h3>
+
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">June 2025 - September 2025</span>
+                <span class="timeline-badge">Training</span>
+                <h4>Full Stack Trainee</h4>
+                <h5>
+                  <i class="fas fa-building"></i> ITI - New Capital, Egypt
+                </h5>
+                <ul class="timeline-details">
+                  <li>
+                    Developed full-stack web applications using PHP, Laravel,
+                    and Node.js
+                  </li>
+                  <li>
+                    Engineered responsive interfaces with HTML5, CSS3,
+                    Bootstrap, jQuery, and React
+                  </li>
+                  <li>
+                    Managed database operations with MySQL and Database
+                    Fundamentals
+                  </li>
+                  <li>
+                    Utilized Version Control Systems and Docker for efficient
+                    deployment
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>PHP & Laravel</span>
+                  <span>Node.js</span>
+                  <span>React</span>
+                  <span>MySQL</span>
+                  <span>Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">September 2024 - November 2024</span>
+                <span class="timeline-badge">Internship</span>
+                <h4>Backend Developer Intern</h4>
+                <h5>
+                  <i class="fas fa-building"></i> Orange Digital Center -
+                  Cairo, Egypt
+                </h5>
+                <ul class="timeline-details">
+                  <li>
+                    Developed RESTful APIs using PHP and Laravel for web
+                    application projects
+                  </li>
+                  <li>
+                    Collaborated with team to design and implement backend
+                    solutions
+                  </li>
+                  <li>
+                    Optimized API performance through improved database
+                    queries
+                  </li>
+                  <li>
+                    Gained experience in Agile workflows and code reviews
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>PHP</span>
+                  <span>Laravel</span>
+                  <span>RESTful APIs</span>
+                  <span>Agile</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-section">
+            <h3 class="timeline-heading">
+              <i class="fas fa-graduation-cap"></i> Education
+            </h3>
+
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">September 2020 - May 2024</span>
+                <span class="timeline-badge">Degree</span>
+                <h4>Bachelor's in Computers and Artificial Intelligence</h4>
+                <h5><i class="fas fa-university"></i> Cairo University</h5>
+                <div class="timeline-tags">
+                  <span>Web Development</span>
+                  <span>Database Systems</span>
+                  <span>OOP</span>
+                  <span>Software Engineering</span>
+                  <span>Data Structures</span>
+                  <span>Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="timeline-section">
+            <h3 class="timeline-heading">
+              <i class="fas fa-certificate"></i> Certifications
+            </h3>
+
+            <div class="certifications-grid">
+              <div class="cert-card" data-aos="fade-up">
+                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                <h4>Full Stack PHP Laravel Development</h4>
+                <p>ITI - New Capital</p>
+                <span class="cert-date">September 2025</span>
+              </div>
+
+              <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                <h4>Back-End (PHP)</h4>
+                <p>Orange</p>
+                <span class="cert-date">November 2024</span>
+              </div>
+
+              <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                <h4>Software Development Process</h4>
+                <p>Udacity</p>
+                <span class="cert-date">April 2022</span>
+              </div>
+
+              <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                <h4>Programming Foundations</h4>
+                <p>LinkedIn</p>
+                <span class="cert-date">August 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+
+        <!-- Skills Tabs -->
+        <div class="skills-tabs" data-aos="fade-up">
+          <button class="skill-tab active" data-tab="backend">
+            <i class="fas fa-server"></i> Backend
+          </button>
+          <button class="skill-tab" data-tab="frontend">
+            <i class="fas fa-palette"></i> Frontend
+          </button>
+          <button class="skill-tab" data-tab="database">
+            <i class="fas fa-database"></i> Database
+          </button>
+          <button class="skill-tab" data-tab="tools">
+            <i class="fas fa-tools"></i> Tools
+          </button>
+        </div>
+
+        <!-- Skills Content -->
+        <div class="skills-content" data-aos="fade-up" data-aos-delay="100">
+          <!-- Backend -->
+          <div class="skill-panel active" id="backend">
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-exchange-alt"></i>
+                <span>RESTful APIs</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-layer-group"></i>
+                <span>MVC</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>SOLID</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-wordpress"></i>
+                <span>WordPress</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-panel" id="frontend">
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-panel" id="database">
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-leaf"></i>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-panel" id="tools">
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <span>Git & GitHub</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-linux"></i>
+                <span>Linux</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-feather-alt"></i>
+                <span>Apache</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-paper-plane"></i>
+                <span>Postman</span>
+              </div>
+              <div class="skill-card">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="soft-skills-section" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="soft-skills-list">
+            <span class="soft-skill-tag">Problem-Solving</span>
+            <span class="soft-skill-tag">Team Collaboration</span>
+            <span class="soft-skill-tag">Communication</span>
+            <span class="soft-skill-tag">Presentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-description">
+            Have a question or want to work together? Drop me a message!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="info-content">
+                <h4>Name</h4>
+                <p>Mohamed Ahmed Abdelghany</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Maadi, Cairo, Egypt</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <a href="tel:+201025435043">+20 102-543-5043</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <a href="mailto:moabdelghany77@gmail.com">moabdelghany77@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper" data-aos="fade-left">
+            <form action="https://formspree.io/f/xnnnnldg" method="POST" class="contact-form" id="contact-form">
+              <div class="form-group">
+                <input type="text" name="name" id="name" required placeholder=" " />
+                <label for="name">Your Name</label>
+                <span class="form-icon"><i class="fas fa-user"></i></span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" required placeholder=" " />
+                <label for="email">Your Email</label>
+                <span class="form-icon"><i class="fas fa-envelope"></i></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" id="subject" required placeholder=" " />
+                <label for="subject">Subject</label>
+                <span class="form-icon"><i class="fas fa-tag"></i></span>
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+                <span class="form-icon"><i class="fas fa-comment"></i></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>&lt;MA/&gt;</span>
+          <p>Backend Developer</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/mohamed-abdelghany-3a53351b7" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/abdelghany-77" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:moabdelghany77@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
 
-      <a href="#home" class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
-    </footer>
-
-    <!-- Image Lightbox -->
-    <div class="lightbox" id="lightbox">
-      <div class="lightbox-content">
-        <button class="lightbox-close" id="lightbox-close">
-          <i class="fas fa-times"></i>
-        </button>
-        <button class="lightbox-nav prev" id="lightbox-prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <img src="" alt="Project Screenshot" id="lightbox-img" />
-        <button class="lightbox-nav next" id="lightbox-next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="lightbox-counter" id="lightbox-counter"></div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2025</span> Mohamed Abdelghany. All
+          rights reserved.
+        </p>
       </div>
     </div>
 
-    <!-- Scripts - Defer for non-blocking load -->
-    <script src="assets/js/script.js" defer></script>
-  </body>
+    <a href="#home" class="back-to-top" id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </footer>
+
+  <!-- Image Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav prev" id="lightbox-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <img src="" alt="Project Screenshot" id="lightbox-img" />
+      <button class="lightbox-nav next" id="lightbox-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+  </div>
+
+  <!-- Scripts - Defer for non-blocking load -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+
 </html>
